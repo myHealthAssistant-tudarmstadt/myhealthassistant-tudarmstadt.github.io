@@ -2,157 +2,157 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>myHealthAssistant</title>
-  </head>
+</head>
 
 <body>
-<div class="text_mit_bild">
-                <!-- <h1 id="maincontent_title">myHealthAssistant</h1> -->
+	<div class="text_mit_bild">
+		<!-- <h1 id="maincontent_title">myHealthAssistant</h1> -->
 
 
-<section id="downloads" class="clearfix">
-          <a href="https://github.com/myHealthAssistant-tudarmstadt/" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/myHealthAssistant-tudarmstadt/" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/myHealthAssistant-tudarmstadt/" id="view-on-github" class="button"><span>View on GitHub</span></a>
-</section>
+		<section id="downloads" class="clearfix">
+			<a href="https://github.com/myHealthAssistant-tudarmstadt/" id="download-zip" class="button"><span>Download .zip</span></a>
+			<a href="https://github.com/myHealthAssistant-tudarmstadt/" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+			<a href="https://github.com/myHealthAssistant-tudarmstadt/" id="view-on-github" class="button"><span>View on GitHub</span></a>
+		</section>
 
-                <div id="maincontent">
-
-
-<p><img alt="myHealthAssistant" src="images/myhealthassistant_logo.png" style="float: right; margin: 10px;"> The myHealthAssistant project proposes a middleware for simplifying the development and deployment of body sensor network (BSN) solutions as well as their integration in ambient sensing environments. The middleware handles a variety of sensors and copes with the complexity of heterogeneous and changing sensor constellations; properties of BSNs that become more and more apparent.</p>
-
-<h2>Middleware Architecture</h2>
-<p>Continuing  development of an increasing variety of sensors has led to a vast increase in  sensor-based telemedicine solutions. A growing range of modular sensors, and  the need of having several applications working with those sensors, has led to an  extensive increase in efforts for system development. We present an <strong>event-driven middleware for on-body and  ambient sensor networks</strong> that allows multiple applications to define  information types of their interest in a <strong>publish/subscribe</strong> manner. Incoming sensor data is hereby transformed into the desired data  representation which lifts the burden of adapting the application with respect  to the connected sensors off the developer’s shoulders. </p>
-<p><br>
-  Furthermore,  an unsupervised on-the-fly reloading of transformation rules from a remote repository  allows the <strong>system’s adaptation to future  applications and sensors at run-time</strong>. Application-specific event channels  provide <strong>tailor-made information  retrieval</strong> as well as control over the dissemination of critical  information.</p>
-<p></p><div align="center"><img src="images/myHealthAssistantAchitecture.png" width="520" height="166" alt="myHealthAssistant Architecture"></div><p></p>
-<h2>Preventive Healthcare Applications</h2>
-In order to evaluate our middleware, we developed several Android applications built on-top of myHealthAssistant. Two of them target the area of preventive healthcare applications:
-
-<h3>Reha App</h3>
-<p><img src="images/myRehaApp.png" width="165" height="324" alt="Screenshot of myRehaApp" style="float: right; margin-left: 10px;">Our rehabilitation application provides monitoring of vital parameters such as blood pressure and weight readings as well as monitoring and instructing interval training for rehabilitation patients. In training mode, patients are supported in their rehabilitation program by several features:</p>
-
-<ul>
-  <li>A  simple interface showing all important information such as heart rate, interval  count-down, total training time, current exercise, and a progress bar  illustrating the training course</li>
-  <li>Audio  feedback before a new exercise</li>
-  <li><strong>Audio feedback </strong>if the wrong exercise is performed  or the heart rate is too high/low</li>
-</ul>
-
-<p>The activity recognition for detecting a wrong exercise is based on a single customized accelerometer. After the training and upon a blood pressure or weight reading, the training data and sensor readings are transmitted to a telemedicine platform.</p>
-<p><img src="images/myRehaSensors.png" width="345" height="56" alt="myReha sensors"></p>
-<p><em>Left Bluetooth sensors: heart rate, HedgeHog accelerator, blood pressure, scale. Right screenshot: myReha application showing the interval trainig assistant.</em></p>
-
-<h3>Fitness App</h3>
-<p><img src="images/myFitnessApp.png" width="165" height="315" alt="Screenshot of myFitness App" style="float: right; margin-left: 10px;">Our fitness  diary application utilizes the middleware’s functionality of a seamless sensor  configuration handling. In a base setup for daily activity monitoring, a set of  a single accelerometer, a smartphone, and a heart rate sensor are used to  detect five different activities, monitor the heart rate and calculate the  calorie expenditure. In this setup, <strong>the  system operates for at least 12 hours without battery re-charge</strong>. When a  person wears additional fitness accessories during a workout a more detailed activity  recognition that gives precise workout information is provided. In this gym  workout setup, two more accelerometers are added which allow <strong>detecting sixteen activities</strong> as well as <strong>counting of individual weight lifting  exercises</strong>.</p>
-
-<p><img src="images/myFitnessSensors.png" width="345" height="72" alt="myFitness sensors"></p>
-<p><em>Left:  three Bluetooth acceleration sensors integrated to a heart rate sensor, leg  strap, and a weightlifting glove. Right screenshot: myFitnessDiary application showing the currently performed exercise including real-time repetition count.</em></p>
+		<div id="maincontent">
 
 
+			<p><img alt="myHealthAssistant" src="images/myhealthassistant_logo.png" style="float: right; margin: 10px;"> The myHealthAssistant project proposes a middleware for simplifying the development and deployment of body sensor network (BSN) solutions as well as their integration in ambient sensing environments. The middleware handles a variety of sensors and copes with the complexity of heterogeneous and changing sensor constellations; properties of BSNs that become more and more apparent.</p>
 
-<h2>Related Research Projects</h2>
-<p><a class="iconblock" href="http://www.gkmm.tu-darmstadt.de/"> <img alt="" src="images/gk_logo_klein.png"> <span>DFG research training group 1362 "Cooperative, Adaptive and Responsive Monitoring in Mixed Mode Environments"</span> </a> <a class="iconblock" href="http://www.ess.tu-darmstadt.de/"> <img alt="" src="images/ess.png"> <span>Embedded Sensing Systems Group</span> </a> <a class="iconblock" href="http://www.ess.tu-darmstadt.de/hedgehog"> <img alt="" src="images/hedgehog_logo.png"> <span><b>HedgeHog</b>: a small wearable sensory unit for logging motion data and doing low-level activity recognition</span> </a></p>
-<h2>References</h2>
-<script src="/publications/dhtml.js" type="text/javascript"></script>
-<script src="/publications/bibtex.js" type="text/javascript"></script>
-<table class="publications">
-<tbody><tr><td>
-<b> Sensor Network Middleware that Mediates between Sensors and Health Care Applications </b><br>
-Christian Seeger, Kristof Van Laerhoven<br>
-IEEE Life Sciences Newsletter, IEEE, November 2013<br>
-[<a href="http://lifesciences.ieee.org/publications/newsletter/november-2013/440-sensor-network-middleware-that-mediates-between-sensors-and-health-care-applications">Journal</a>]
-[<a href="javascript:show_bibtex('seeger:ieeenewsletter:nov:2013')">BibTeX</a>]
-<pre id="seeger:ieeenewsletter:nov:2013" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>A Publish/Subscribe Middleware for Body and Ambient Sensor Networks that Mediates between Sensors and Applications</b><br>
-Christian Seeger, Kristof Van Laerhoven, Jens Sauer, Alejandro Buchmann<br>
-IEEE International Conference on Healthcare Informatics (ICHI 2013), IEEE Press, Philadelphia, PA, 2013<br>
-<em>Best Paper Award</em><br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_ICHI2013_final.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('cseeger-2013-ichi')">BibTeX</a>]
-<pre id="cseeger-2013-ichi" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>An Event-based BSN Middleware that supports Seamless Switching between Sensor Configurations</b><br>
-Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
-ACM SIGHIT International Health Informatics Symposium (IHI 2012), Miami, Florida, USA, January 2012<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/seeger2012-ihi.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('IHI2012-seeger')">BibTeX</a>]
-<pre id="IHI2012-seeger" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>Wireless Sensor Networks in the Wild: Three Practical Issues after a Middleware Deployment</b><br>
-Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
-The sixth international workshop on Middleware Tools, Services and Run-time Support for Networked Embedded Systems (MidSens 2011), Lisbon, Portugal, ACM, December 2011<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/seeger_midsens11.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('midsens2011-seeger')">BibTeX</a>]
-<pre id="midsens2011-seeger" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>myHealthAssistant: A Phone-based Body Sensor Network that Captures the Wearer's Exercises throughout the Day</b><br>
-Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
-The 6th International Conference on Body Area Networks (BodyNets), Beijing, China, ISBN 978-1-936968-29-9, ACM, November 2011<br>
-<em>Best Paper Award</em><br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_bodynets2011.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('bodynets2011-seeger')">BibTeX</a>]
-<pre id="bodynets2011-seeger" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>Poster Abstract: Adaptive Gym Exercise Counting for myHealthAssistant</b><br>
-Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
-The 6th International Conference on Body Area Networks (BodyNets), Beijing, China, ISBN 978-1-936968-29-9, ACM, November 2011<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_bodynets2011_poster.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('bodynets2011poster-seeger')">BibTeX</a>]
-<pre id="bodynets2011poster-seeger" class="BibTeX"> </pre>
-</td></tr>
-</tbody></table>
+			<h2>Middleware Architecture</h2>
+			<p>Continuing  development of an increasing variety of sensors has led to a vast increase in  sensor-based telemedicine solutions. A growing range of modular sensors, and  the need of having several applications working with those sensors, has led to an  extensive increase in efforts for system development. We present an <strong>event-driven middleware for on-body and  ambient sensor networks</strong> that allows multiple applications to define  information types of their interest in a <strong>publish/subscribe</strong> manner. Incoming sensor data is hereby transformed into the desired data  representation which lifts the burden of adapting the application with respect  to the connected sensors off the developer’s shoulders. </p>
+			<p><br>
+				Furthermore,  an unsupervised on-the-fly reloading of transformation rules from a remote repository  allows the <strong>system’s adaptation to future  applications and sensors at run-time</strong>. Application-specific event channels  provide <strong>tailor-made information  retrieval</strong> as well as control over the dissemination of critical  information.</p>
+				<p></p><div align="center"><img src="images/myHealthAssistantAchitecture.png" width="520" height="166" alt="myHealthAssistant Architecture"></div><p></p>
+				<h2>Preventive Healthcare Applications</h2>
+				In order to evaluate our middleware, we developed several Android applications built on-top of myHealthAssistant. Two of them target the area of preventive healthcare applications:
 
-<h2>Related Theses</h2>
-<script src="/publications/dhtml.js" type="text/javascript"></script>
-<script src="/publications/bibtex.js" type="text/javascript"></script>
-<table class="publications">
-<tbody><tr><td>
-<b>Entwicklung eines Aktivitätserkennungssystems für Trimm-dich-Pfade für Android-Smartphones</b> (BSc. Thesis)<br>
-Sebastian Niederhöfer. Technische Universität Darmstadt, 2013<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/thesis_sebastian_niederhoefer.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('2013:bsc:thesis:sebastian:niederhoefer')">BibTeX</a>]
-<pre id="2013:bsc:thesis:sebastian:niederhoefer" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>Introducing Application-specific Communication Channels in myHealthAssistant</b> (BSc. Thesis)<br>
-Jens Sauer. Technische Universität Darmstadt, 2013<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/Thesis_Jens_Sauer.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('2013:bsc:thesis:jens:sauer')">BibTeX</a>]
-<pre id="2013:bsc:thesis:jens:sauer" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>Entwurf und Implementierung einer dynamischen Funktionalitätsanpassung von myHealthAssistant</b> (BSc. Thesis)<br>
-Dassi Ponka. Technische Universität Darmstadt, 2013<br>
-[<a href="javascript:show_bibtex('2013:bsc:thesis:dassi:ponka')">BibTeX</a>]
-<pre id="2013:bsc:thesis:dassi:ponka" class="BibTeX"> </pre>
-</td></tr>
-<tr><td>
-<b>Development of an Activity Recognition System for Fitness Trails</b> (BSc. Thesis)<br>
-Thomas Pignede. Technische Universität Darmstadt, 2012<br>
-[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/report_thomas.pdf">PDF</a>]
-[<a href="javascript:show_bibtex('2012:bsc:thesis:thomas:pignede')">BibTeX</a>]
-<pre id="2012:bsc:thesis:thomas:pignede" class="BibTeX"> </pre>
-</td></tr>
-</tbody></table>
+				<h3>Reha App</h3>
+				<p><img src="images/myRehaApp.png" width="165" height="324" alt="Screenshot of myRehaApp" style="float: right; margin-left: 10px;">Our rehabilitation application provides monitoring of vital parameters such as blood pressure and weight readings as well as monitoring and instructing interval training for rehabilitation patients. In training mode, patients are supported in their rehabilitation program by several features:</p>
 
-</div>
-              </div>
+				<ul>
+					<li>A  simple interface showing all important information such as heart rate, interval  count-down, total training time, current exercise, and a progress bar  illustrating the training course</li>
+					<li>Audio  feedback before a new exercise</li>
+					<li><strong>Audio feedback </strong>if the wrong exercise is performed  or the heart rate is too high/low</li>
+				</ul>
 
-              
-</body>
-</html>
+				<p>The activity recognition for detecting a wrong exercise is based on a single customized accelerometer. After the training and upon a blood pressure or weight reading, the training data and sensor readings are transmitted to a telemedicine platform.</p>
+				<p><img src="images/myRehaSensors.png" width="345" height="56" alt="myReha sensors"></p>
+				<p><em>Left Bluetooth sensors: heart rate, HedgeHog accelerator, blood pressure, scale. Right screenshot: myReha application showing the interval trainig assistant.</em></p>
+
+				<h3>Fitness App</h3>
+				<p><img src="images/myFitnessApp.png" width="165" height="315" alt="Screenshot of myFitness App" style="float: right; margin-left: 10px;">Our fitness  diary application utilizes the middleware’s functionality of a seamless sensor  configuration handling. In a base setup for daily activity monitoring, a set of  a single accelerometer, a smartphone, and a heart rate sensor are used to  detect five different activities, monitor the heart rate and calculate the  calorie expenditure. In this setup, <strong>the  system operates for at least 12 hours without battery re-charge</strong>. When a  person wears additional fitness accessories during a workout a more detailed activity  recognition that gives precise workout information is provided. In this gym  workout setup, two more accelerometers are added which allow <strong>detecting sixteen activities</strong> as well as <strong>counting of individual weight lifting  exercises</strong>.</p>
+
+				<p><img src="images/myFitnessSensors.png" width="345" height="72" alt="myFitness sensors"></p>
+				<p><em>Left:  three Bluetooth acceleration sensors integrated to a heart rate sensor, leg  strap, and a weightlifting glove. Right screenshot: myFitnessDiary application showing the currently performed exercise including real-time repetition count.</em></p>
+
+
+
+				<h2>Related Research Projects</h2>
+				<p><a class="iconblock" href="http://www.gkmm.tu-darmstadt.de/"> <img alt="" src="images/gk_logo_klein.png"> <span>DFG research training group 1362 "Cooperative, Adaptive and Responsive Monitoring in Mixed Mode Environments"</span> </a> <a class="iconblock" href="http://www.ess.tu-darmstadt.de/"> <img alt="" src="images/ess.png"> <span>Embedded Sensing Systems Group</span> </a> <a class="iconblock" href="http://www.ess.tu-darmstadt.de/hedgehog"> <img alt="" src="images/hedgehog_logo.png"> <span><b>HedgeHog</b>: a small wearable sensory unit for logging motion data and doing low-level activity recognition</span> </a></p>
+				<h2>References</h2>
+				<script src="/publications/dhtml.js" type="text/javascript"></script>
+				<script src="/publications/bibtex.js" type="text/javascript"></script>
+				<table class="publications">
+					<tbody><tr><td>
+						<b> Sensor Network Middleware that Mediates between Sensors and Health Care Applications </b><br>
+						Christian Seeger, Kristof Van Laerhoven<br>
+						IEEE Life Sciences Newsletter, IEEE, November 2013<br>
+						[<a href="http://lifesciences.ieee.org/publications/newsletter/november-2013/440-sensor-network-middleware-that-mediates-between-sensors-and-health-care-applications">Journal</a>]
+						[<a href="javascript:show_bibtex('seeger:ieeenewsletter:nov:2013')">BibTeX</a>]
+						<pre id="seeger:ieeenewsletter:nov:2013" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>A Publish/Subscribe Middleware for Body and Ambient Sensor Networks that Mediates between Sensors and Applications</b><br>
+						Christian Seeger, Kristof Van Laerhoven, Jens Sauer, Alejandro Buchmann<br>
+						IEEE International Conference on Healthcare Informatics (ICHI 2013), IEEE Press, Philadelphia, PA, 2013<br>
+						<em>Best Paper Award</em><br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_ICHI2013_final.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('cseeger-2013-ichi')">BibTeX</a>]
+						<pre id="cseeger-2013-ichi" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>An Event-based BSN Middleware that supports Seamless Switching between Sensor Configurations</b><br>
+						Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
+						ACM SIGHIT International Health Informatics Symposium (IHI 2012), Miami, Florida, USA, January 2012<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/seeger2012-ihi.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('IHI2012-seeger')">BibTeX</a>]
+						<pre id="IHI2012-seeger" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>Wireless Sensor Networks in the Wild: Three Practical Issues after a Middleware Deployment</b><br>
+						Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
+						The sixth international workshop on Middleware Tools, Services and Run-time Support for Networked Embedded Systems (MidSens 2011), Lisbon, Portugal, ACM, December 2011<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/seeger_midsens11.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('midsens2011-seeger')">BibTeX</a>]
+						<pre id="midsens2011-seeger" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>myHealthAssistant: A Phone-based Body Sensor Network that Captures the Wearer's Exercises throughout the Day</b><br>
+						Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
+						The 6th International Conference on Body Area Networks (BodyNets), Beijing, China, ISBN 978-1-936968-29-9, ACM, November 2011<br>
+						<em>Best Paper Award</em><br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_bodynets2011.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('bodynets2011-seeger')">BibTeX</a>]
+						<pre id="bodynets2011-seeger" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>Poster Abstract: Adaptive Gym Exercise Counting for myHealthAssistant</b><br>
+						Christian Seeger, Alejandro Buchmann, Kristof Van Laerhoven<br>
+						The 6th International Conference on Body Area Networks (BodyNets), Beijing, China, ISBN 978-1-936968-29-9, ACM, November 2011<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/pdf/cseeger_bodynets2011_poster.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('bodynets2011poster-seeger')">BibTeX</a>]
+						<pre id="bodynets2011poster-seeger" class="BibTeX"> </pre>
+					</td></tr>
+				</tbody></table>
+
+				<h2>Related Theses</h2>
+				<script src="/publications/dhtml.js" type="text/javascript"></script>
+				<script src="/publications/bibtex.js" type="text/javascript"></script>
+				<table class="publications">
+					<tbody><tr><td>
+						<b>Entwicklung eines Aktivitätserkennungssystems für Trimm-dich-Pfade für Android-Smartphones</b> (BSc. Thesis)<br>
+						Sebastian Niederhöfer. Technische Universität Darmstadt, 2013<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/thesis_sebastian_niederhoefer.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('2013:bsc:thesis:sebastian:niederhoefer')">BibTeX</a>]
+						<pre id="2013:bsc:thesis:sebastian:niederhoefer" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>Introducing Application-specific Communication Channels in myHealthAssistant</b> (BSc. Thesis)<br>
+						Jens Sauer. Technische Universität Darmstadt, 2013<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/Thesis_Jens_Sauer.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('2013:bsc:thesis:jens:sauer')">BibTeX</a>]
+						<pre id="2013:bsc:thesis:jens:sauer" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>Entwurf und Implementierung einer dynamischen Funktionalitätsanpassung von myHealthAssistant</b> (BSc. Thesis)<br>
+						Dassi Ponka. Technische Universität Darmstadt, 2013<br>
+						[<a href="javascript:show_bibtex('2013:bsc:thesis:dassi:ponka')">BibTeX</a>]
+						<pre id="2013:bsc:thesis:dassi:ponka" class="BibTeX"> </pre>
+					</td></tr>
+					<tr><td>
+						<b>Development of an Activity Recognition System for Fitness Trails</b> (BSc. Thesis)<br>
+						Thomas Pignede. Technische Universität Darmstadt, 2012<br>
+						[<a href="http://www.dvs.tu-darmstadt.de/publications/BScs/report_thomas.pdf">PDF</a>]
+						[<a href="javascript:show_bibtex('2012:bsc:thesis:thomas:pignede')">BibTeX</a>]
+						<pre id="2012:bsc:thesis:thomas:pignede" class="BibTeX"> </pre>
+					</td></tr>
+				</tbody></table>
+
+			</div>
+		</div>
+
+		
+	</body>
+	</html>
