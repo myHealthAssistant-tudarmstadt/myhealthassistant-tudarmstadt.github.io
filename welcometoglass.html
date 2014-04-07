@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>myHealthAssistant</title>
+</head>
+
+<body>
+	<header>
+		<div class="inner">
+			<h1>myHealthAssistant</h1>
+			<h2></h2>
+		</div>
+	</header>
+
+	<div id="ts_tabmenu">
+		<ul>
+			<li><a href="index.html">Homepage</a></li>
+			<li><a href="howtouse.html">How to Use</a></li>
+			<li><a href="welcometoglass.html"><strong>Welcome To Google Glass</strong></a></li>
+		</ul>
+	</div>
+
+	<div id="content-wrapper">
+		<div class="inner clearfix">
+			<section id="main-content">
+				<p>
+					Suppose you got your hand on those first ever manufactured Google Glass Product, and being a enthusiastic sportler you also own a Polar Bluetooth Heart Rate Monitor (it's the only device we can openly decode raw datas). <p></p>
+
+					Would that be great to see your heart rate beeps on your Glass while you're running?! ;) <br>
+					In this page I will introduce you to the ability of intergrate myHealthAssistant project into Google Glass, explore some very promissing feature, that isn't sharpen for now: bluetooth communication with healthcare monitoring device. <p></p>
+
+					For a while now, the major of healthcare sensor monitors only focus on smartphones and computer to communicate with over bluetooth. But any device that has bluetooth can also do that, and Glass is one of them. Goal of this Page is allowing Glass to read pulse sensor.<p></p>
+
+					Warning: this tutorial's only for Geeks, follow it if you consider yourself one!
+				</p>
+				<h2>Software Requirements</h2>
+				Because in default Google Glass doesn't allow to run the kind of android app normaly runs on smartphone, we'll need a few things to tweak it:
+				<ul>
+					<li>ADB Tools: 
+						<a href="http://developer.android.com/tools/help/adb.html">Android Debug Bridge</a> helps communicating with Android Device from Command Line tool. It comes within Android SDK tools kit. If you installed ADT Bundle on computer before then no need to care for it.</li>
+						<li>Enable Debug mode in Glass: In order to deploy and debug apps running on Glass, you must first enable debug mode on Glass as follow:<br>
+							Go to Settings -> Navigate to DeviceInfo -> Tap to enable Debug<p></p>
+							<div align="center"><img src="images/png/gotoSettings.png" width="80%" alt="gotoSettings"></div><p></p>
+							<div align="center"><img src="images/png/deviceInfo.png" width="80%" alt="deviceInfo"></div><p></p>
+							<div align="center"><img src="images/png/TurnOnDebug.png" width="80%" alt="TurnOnDebug"></div><p></p>
+						</li>
+						<li>Android Screen Monitor: <a href="https://code.google.com/p/android-screen-monitor/">Android Screen Monitor (ASM)</a> is a tool to monitor screen on the device or emulator (because seeing through the tiny little screen of Glass is sometimes frustrating!). After downloading, open command line, locate to the folder and run by typing: <p></p> 
+							<code>java -jar asm.jar</code><p></p>
+						</li>
+
+						<li>
+							Launcher2 and Settings apk: <a href="http://goo.gl/EqV8u">Launcher2</a> allows most native android apps to run on Glass without affecting general usability of Glass too much. <a href="http://goo.gl/ytfSn">Settings apk</a> is used to change settings and bluetooth activity. To install navigate to the downloaded place and on command line type: <p></p>
+							<p><code>adb install 'apk-name' </code></p>
+							For more infos go <a href="http://www.glassxe.com/2013/05/23/settings-apk-and-launcher2-apk-from-the-hacking-glass-session-at-google-io/">here</a>.
+							After success, the launcher and settings can be navigate from Glass settings like below:<p></p>
+							<div align="center"><img src="images/png/gotoSettings.png" width="80%" alt="gotoSettings"></div><p></p>
+							<div align="center"><img src="images/png/gotoLauncher.png" width="80%" alt="gotoLauncher"></div><p></p>
+							<div align="center"><img src="images/png/androidHome.png" width="80%" alt="androidHome"></div><p></p>
+							<div align="center"><img src="images/png/appFrontal.png" width="80%" alt="appFrontal"></div><p></p>
+						</li>
+
+						<li>
+							<p>Pairing with Sensors: By now Glass can act like an android phone, so all other steps are just like before</p>
+							Open Settings -> Bluetooth -> Device Searching <p></p>
+							<div align="center"><img src="images/png/gotoSettings_apk.png" width="80%" alt="gotoSettings_apk"></div><p></p>
+							<div align="center"><img src="images/png/searchingDevice_.png" width="80%" alt="searchingDevice_"></div><p></p>
+							
+							When prompt to input pin, using adb from command line:<p></p>
+							<p><code>adb shell input text '1234'</code> (Vary from sensor to sensor)</p>
+							<div align="center"><img src="images/png/typePin.png" width="80%" alt="typePin"></div><p></p>
+
+							Paired Sensor: <p></p>
+							<div align="center"><img src="images/png/pairedDevice.png" width="80%" alt="pairedDevice"></div><p></p>
+							
+						</li>
+
+
+						<h2>Run myHealthHub on Glass</h2>
+						<li>
+							Install myHealthHub on Glass is the same as deploy it on phone. You can use Eclipse as before to do so.
+							<p></p>
+							<div align="center"><img src="images/png/mHA.png" width="80%" alt="mHA"></div><p></p>
+							<div align="center"><img src="images/png/myHealthGlass.png" width="80%" alt="myHealthGlass"></div><p></p>
+							<div align="center"><img src="images/png/pusubglass.png" width="80%" alt="pusubglass"></div><p></p>
+						</li>
+					</ul>
+					
+					<p>As you can see, we have archived to read Heart rate sensor data from Glass the same as on your smartphone. It's really interesting to see how in the future something like this can be fully interated into Glass and other wearable devices.</p>
+					Have fun coding!
+				</section>
+			</div>
+
+
+		</div>
+
+	</body>
+	</html>
