@@ -26,57 +26,67 @@
 		<ul>
 			<li><a href="index.html">Homepage</a></li>
 			<li><a href="howtouse.html"><strong>How to Use</strong></a></li>
-			<!-- <li><a href="welcometoglass.html">Welcome To Google Glass</a></li> -->
+			<li><a href="welcometoglass.html">Welcome To Google Glass</a></li>
 		</ul>
 	</div>
 
 	<div id="content-wrapper">
 		<div class="inner clearfix">
-			<section id="main-content">
-				This Project runs on Android Platform 4.x, it communicates with body and ambient sensing environment sensors over Bluetooth v2.1. Other Applications can subscribe to it by establish explicit Android Broadcast Intents.
+			<aside id="sidebar">
+				<p class="repo-owner"><a href="https://github.com/myHealthAssistant-tudarmstadt/myhealthassistant"></a> is maintained by <a href="https://github.com/myHealthAssistant-tudarmstadt">myHealthAssistant-tudarmstadt</a>.</p>
 
-				<h2>Software Requirements</h2>
-				Make sure your system has already installed following softwares before build the application:
-				<ul>
-					<li><a href="http://www.oracle.com/technetwork/java/javaee/downloads/java-ee-sdk-6u3-jdk-6u29-downloads-523388.html">Java JDK SE 1.6 or above</a></li>
-					<li><a href="http://developer.android.com/sdk/index.html">Android SDK (ADT Bundle)</a></li>
-					<li>Android 4.03 (Sdk version API15) or Android 4.2.2 (Sdk version API17) from Android SDK Manager</li>
-				</ul>
+				<p><img alt="myHealthAssistant" src="images/myhealthassistant_logo.png" style="float: right; margin: 10px;">
+				</p>
+				
+				<p>2014 TU Darmstadt, Hessen, Germany.
+					Department of Computer Science Databases and Distributed Systems</p>
+			</aside>
 
-				<h2>How to run from within Eclipse</h2>
-				Start Eclipse inside ADT Bundle directory.
-				<ul>
-					<li>In Eclipse go File-> Import-> Android-> Exiting Android Code into Workspace-> Next</li>
-					<li>Choose the root Directory as this Project -> Finish</li>
-					<li>Wait for Eclipse finish building all projects and confirm no errors</li>
-					<li>To run right click on project choose "run as" -> "Android Application"</li>
-				</ul>
+				<section id="main-content">
+					This Project runs on Android Platform 4.x, it communicates with body and ambient sensing environment sensors over Bluetooth v2.1. Other Applications can subscribe to it by establish explicit Android Broadcast Intents.
 
-				<h2>Usage</h2>
-				Using myHealthHub is straight forward. Suppose you have a sensor (a Polar Heart rate sensor since other sensor decoder aren't included in myHealthHub due to license aggrement). 
-				First you need to pair it with Android:
-				<ul>
-					<li>Wet your Polar Heart Rate Monitor to increase conductivity and put it on</li>
-					<li>Go to Android Settings - Tap Wireless & Network</li>
-					<li>Open Bluetooth Settings</li>
-					<li>Tap Scan Devices</li>
-					<li>Your Heart Rate Monitor should appear below “Bluetooth devices”. Tap to pair and enter in PIN 0000 (or 1234, depends on manufacturer) to pair</li>
-					<li>Your Polar will now be paired. To delete a pairing, open Settings next to paired device, and choose to unpair</li>
-				</ul>
+					<h2>Software Requirements</h2>
+					Make sure your system has already installed following softwares before build the application:
+					<ul>
+						<li><a href="http://www.oracle.com/technetwork/java/javaee/downloads/java-ee-sdk-6u3-jdk-6u29-downloads-523388.html">Java JDK SE 1.6 or above</a></li>
+						<li><a href="http://developer.android.com/sdk/index.html">Android SDK (ADT Bundle)</a></li>
+						<li>Android 4.03 (Sdk version API15) or Android 4.2.2 (Sdk version API17) from Android SDK Manager</li>
+					</ul>
 
-				To start Open myHealthHub:
-				<ul>
-					<li>Tap on Pulse Sensor type to open its Settings</li>
-					<li>Tap Sensor Type to choose device's type as Polar Bluetooth Heart Rate for raw data decoding</li>
-					<li>Tap Bluetooth Device to choose Mac Address of pairing sensor above</li>
-					<li>Back to main menu, now you can enable or disable Polar Sensor, which will allow myHealthHub to advertise/unadvertise Heart Rate data and other Applications can subscribe to it</li>
-				</ul> 
+					<h2>How to run from within Eclipse</h2>
+					Start Eclipse inside ADT Bundle directory.
+					<ul>
+						<li>In Eclipse go File-> Import-> Android-> Exiting Android Code into Workspace-> Next</li>
+						<li>Choose the root Directory as this Project -> Finish</li>
+						<li>Wait for Eclipse finish building all projects and confirm no errors</li>
+						<li>To run right click on project choose "run as" -> "Android Application"</li>
+					</ul>
 
-			</section>
+					<h2>Usage</h2>
+					Using myHealthHub is straight forward. Suppose you have a sensor (a Polar Heart rate sensor since other sensor decoder aren't included in myHealthHub due to license aggrement). 
+					First you need to pair it with Android:
+					<ul>
+						<li>Wet your Polar Heart Rate Monitor to increase conductivity and put it on</li>
+						<li>Go to Android Settings - Tap Wireless & Network</li>
+						<li>Open Bluetooth Settings</li>
+						<li>Tap Scan Devices</li>
+						<li>Your Heart Rate Monitor should appear below “Bluetooth devices”. Tap to pair and enter in PIN 0000 (or 1234, depends on manufacturer) to pair</li>
+						<li>Your Polar will now be paired. To delete a pairing, open Settings next to paired device, and choose to unpair</li>
+					</ul>
+
+					To start Open myHealthHub:
+					<ul>
+						<li>Tap on Pulse Sensor type to open its Settings</li>
+						<li>Tap Sensor Type to choose device's type as Polar Bluetooth Heart Rate for raw data decoding</li>
+						<li>Tap Bluetooth Device to choose Mac Address of pairing sensor above</li>
+						<li>Back to main menu, now you can enable or disable Polar Sensor, which will allow myHealthHub to advertise/unadvertise Heart Rate data and other Applications can subscribe to it</li>
+					</ul> 
+
+				</section>
+			</div>
+
+
 		</div>
 
-
-	</div>
-
-</body>
-</html>
+	</body>
+	</html>
