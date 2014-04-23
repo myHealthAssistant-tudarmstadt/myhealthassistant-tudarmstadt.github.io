@@ -27,6 +27,7 @@
 			<li><a href="index.html">Homepage</a></li>
 			<li><a href="howtouse.html"><strong>How to Use</strong></a></li>
 			<li><a href="welcometoglass.html">Welcome To Google Glass</a></li>
+			<li><a href="people.html">People</a></li>
 		</ul>
 	</div>
 
@@ -34,6 +35,8 @@
 		<div class="inner clearfix">
 			<aside id="sidebar">
 				<p class="repo-owner"><a href="https://github.com/myHealthAssistant-tudarmstadt/myhealthassistant"></a> is maintained by <a href="https://github.com/myHealthAssistant-tudarmstadt">myHealthAssistant-tudarmstadt</a>.</p>
+
+				<p><img alt="ess" src="images/ess.png" style="float: right;width: 200px;">ESS Group, TU Darmstadt </p>
 
 				<p><img alt="myHealthAssistant" src="images/myhealthassistant_logo.png" style="float: right; margin: 10px;">
 				</p>
@@ -62,7 +65,7 @@
 						<li>To run right click on project choose "run as" -> "Android Application"</li>
 					</ul>
 
-					<h2>Usage</h2>
+					<h2>Use with Bluetooth Sensor</h2>
 					Using myHealthHub is straight forward. Suppose you have a sensor (a Polar Heart rate sensor since other sensor decoder aren't included in myHealthHub due to license aggrement). 
 					First you need to pair it with Android:
 					<ul>
@@ -82,6 +85,19 @@
 						<li>Back to main menu, now you can enable or disable Polar Sensor, which will allow myHealthHub to advertise/unadvertise Heart Rate data and other Applications can subscribe to it</li>
 					</ul> 
 
+					<h2>Use with internal Sensor available on phone</h2>
+					myHealthHub can also be used to record data from Sensors within device. Related information can be found on <a href="http://developer.android.com/guide/topics/sensors/sensors_overview.html">android developer page</a>
+
+					To start Open myHealthHub:
+					<ul>
+						<li>Motion to the second tap "Interal Sensor Config"</li>
+						<li>Here you can choose which sensor that is available on your phone to be active</li>
+						<li>If a sensor is activated, its raw data can be recorded and be viewed on the third tap "Traffic Monitor" as a simple plot demonstration (thanks to GraphView from <a href="http://android-graphview.org/">jjoe64</a>)</li>
+					</ul>
+
+					<br>
+					<br>
+					Have fun coding! 
 				</section>
 			</div>
 
