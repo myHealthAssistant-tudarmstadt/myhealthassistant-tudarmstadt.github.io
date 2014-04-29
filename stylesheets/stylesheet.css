@@ -41,10 +41,10 @@ q:before, q:after {
   content: '';
   content: none;
 }
-table {
+/*table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+}*/
 
 /* LAYOUT STYLES */
 body {
@@ -256,6 +256,10 @@ a.button span {
   margin-right: 0;
 }
 
+email { 
+  background-image: url("/images/email.png");
+}
+
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -324,6 +328,11 @@ form {
 }*/
 
 /* publication lists */
+table.research{
+}
+table.research td{
+    vertical-align:middle;
+}
 
 table.publications {
   border-spacing : 0px 7px;
