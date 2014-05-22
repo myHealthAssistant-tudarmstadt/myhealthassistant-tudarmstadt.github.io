@@ -50,64 +50,64 @@
 				<p>2014 TU Darmstadt, Hessen, Germany.
 					Department of Computer Science Databases and Distributed Systems</p>
 
-				<p>Directly download the APK file here with your phone, completely harmless! Scan this<br><br>
+				<p>Directly download the APK file here! You can also scan this<br><br>
 				<img alt="myHealthHub_APK_link" src="images/myHealthHub_APK_link.png" style="float: right;width: 200px;"><br>
-				Or follow this <a href="https://drive.google.com/folderview?id=0B1K7WjMkB5fqemlhX3FVd2tnUUE">link</a> 
+				Or follow this <a href="https://drive.google.com/folderview?id=0B1K7WjMkB5fqemlhX3FVd2tnUUE">link</a> <br><br> -> See remarks in how-to-install!
+
 				</p>
 
 			</aside>
 
 				<section id="main-content">
-					This Project runs on Android Platform 4.x, it communicates with body and ambient sensing environment sensors over Bluetooth v2.1. Other Applications can subscribe to it by establish explicit Android Broadcast Intents.
+					This application runs on Android Platforms 4.x, it communicates with body and ambient sensing environment sensors over Bluetooth v2.1. Other Applications can subscribe to it by establishing explicit Android Broadcast Intents.
 
-					<h2>Use with internal Sensor available on phone</h2>
-					myHealthHub can also be used to record data of sensors within device regularly. Related information about these sensors can be found on <a href="http://developer.android.com/guide/topics/sensors/sensors_overview.html">android developer page.</a>
+					<h2>Demo: Use tue internal phone sensors</h2>
+					myHealthHub can also be used to record data of sensors. Related information about these sensors can be found on the <a href="http://developer.android.com/guide/topics/sensors/sensors_overview.html">Android developer page.</a>
 
-					<p>To start Open myHealthHub:</p>
+					<p>To start open myHealthHub:</p>
 					<ul>
-						<li>Tap on menu button of device and choose "Interal Sensor Config"
+						<li>Tap on the menu button of the device and choose "Interal Sensor Config"
 						<p></p>
 							<div align="center"><img src="images/android/mhh_intSConfig.png" height="10%"></div><p></p>
 						</li>
-						<li>Here you can choose which sensor that is available on your phone to be active. By default motion and light sesors are enabled
+						<li>Here you can change the sensors that are being logged by the app. Simply deactivate one of the activated sensors and choose another sensor. By default, each minute the variance of the accelerometer and the mean of the light reading are stored in the internal database.
 						<p></p>
 							<div align="center"><img src="images/android/mhh_intAccEn.png" height="10%"></div><p></p>
 						</li>
-						<li>If a sensor is activated, its raw data can be recorded and be viewed on the second tap "Traffic Monitor" as a simple plot demonstration (thanks to GraphView from <a href="http://android-graphview.org/">jjoe64</a>)
+						<li>If a sensor is activated, its raw data can be recorded and be viewed on the second tap of the app in "Traffic Monitor" as a simple plot demonstration (thanks to GraphView from <a href="http://android-graphview.org/">jjoe64</a>)
 						<p></p>
 							<div align="center"><img src="images/android/mhh_graph.png" height="10%"></div><p></p>
 						</li>
 					</ul>
 
 					<h2>Use with Bluetooth Sensor</h2>
-					Using myHealthHub is straight forward. Suppose you have a sensor (a Polar Heart rate sensor since other sensor decoder aren't included in myHealthHub due to license aggrement). 
-					First you need to pair it with Android:
+					You can use the myHealthHub with other, external sensors via the Bluetooth connection. Here, we describe the use of the app with a Polar Heart Rate Monitor.
 					<ul>
 						<li>Wet your Polar Heart Rate Monitor to increase conductivity and put it on</li>
-						<li>Go to Android Settings - Tap Wireless & Network</li>
-						<li>Open Bluetooth Settings</li>
-						<li>Tap Scan Devices</li>
-						<li>Your Heart Rate Monitor should appear below “Bluetooth devices”. Tap to pair and enter in PIN 0000 (or 1234, depends on manufacturer) to pair</li>
-						<li>Your Polar will now be paired. To delete a pairing, open Settings next to paired device, and choose to unpair</li>
+						<li>Go to Android Settings - Tap "Wireless & Network"</li>
+						<li>Open "Bluetooth Settings"</li>
+						<li>Tap "Scan Devices"</li>
+						<li>Your Heart Rate Monitor should appear below “Bluetooth devices”. Tap to pair and enter in PIN 0000 (or 1234, depends on the default settings of the device)</li>
+						<li>To delete a pairing, open "Settings" next to paired devices, and choose to unpair</li>
 					</ul>
 
-					To start Open myHealthHub:
+					To start, open myHealthHub:
 					<ul>
-						<li>Tap on Pulse Sensor type to open its Settings
+						<li>Tap on the "Sensor Configuration" screen on "Pulse" to open its settings menu
 						<p></p>
 							<div align="center"><img src="images/android/mhh_sConfig.png" height="10%"></div><p></p>
 						<p></p>
 							<div align="center"><img src="images/android/mhh_PulseConfig.png" height="10%"></div><p></p>
 						</li>
-						<li>Tap Sensor Type to choose device's type as Polar Bluetooth Heart Rate for raw data decoding
+						<li>Tap on "Sensor Type" to choose your previously connected device for raw data decoding (here: Polar Bluetooth Heart Rate)
 						<p></p>
 							<div align="center"><img src="images/android/mhh_selectPolar.png" height="10%"></div><p></p>
 						</li>
-						<li>Tap Bluetooth Device to choose Mac Address of pairing sensor above
+						<li>Tap "Bluetooth Device" to choose the Mac Address of pairing sensor.
 						<p></p>
 							<div align="center"><img src="images/android/mhh_selectBTDevice.png" height="10%"></div><p></p>
 						</li>
-						<li>Back to main menu, now you can enable or disable Polar Sensor, which will allow myHealthHub to advertise/unadvertise Heart Rate data so that other Applications can subscribe to it.
+						<li>Go back to the main menu. Now you can enable or disable the Polar Sensor, which will allow myHealthHub to advertise/unadvertise Heart Rate data so that other applications can subscribe to it.
 						<p></p>
 							<div align="center"><img src="images/android/mhh_enableBT.png" height="10%"></div><p></p>
 						</li>
